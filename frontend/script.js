@@ -21,7 +21,7 @@ async function fetchSongs(){
   loader.style.display="flex";
   songList.style.display="none";
 
-  const res = await fetch("http://localhost:5000/songs");
+  const res = await fetch("https://music-player-dyss.onrender.com/songs");
   songs = await res.json();
 
   loader.style.display="none";
@@ -121,4 +121,5 @@ volumeBar.addEventListener("input",()=>{
 });
 
 /* Init */
+
 fetchSongs();
