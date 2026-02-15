@@ -168,3 +168,78 @@ body{
 }
 
 .volume-container input{ flex:1; }
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+  /* Hide sidebar */
+  .sidebar{
+    display:none;
+  }
+
+  .container{
+    flex-direction:column;
+  }
+
+  .main{
+    padding:15px;
+  }
+
+  h1{
+    font-size:20px;
+    text-align:center;
+  }
+
+  /* Song Row */
+  .song-row{
+    padding:10px;
+  }
+
+  .song-left span{
+    font-size:14px;
+  }
+
+  .song-play{
+    width:32px;
+    height:32px;
+  }
+
+  /* Popup Player */
+  .new-player{
+    width:90%;
+    margin:25% auto;
+    padding:20px;
+  }
+
+  .big-cover{
+    width:130px;
+  }
+
+  .song-title{
+    font-size:18px;
+  }
+
+  .modern-controls{
+    gap:18px;
+  }
+
+  .big-play{
+    width:55px;
+    height:55px;
+    font-size:22px;
+  }
+
+  /* Time bar */
+  .time-container span{
+    font-size:13px;
+  }
+
+  /* Volume */
+  .volume-container i{
+    font-size:14px;
+  }
+
+}
